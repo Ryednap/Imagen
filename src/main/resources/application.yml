@@ -4,16 +4,12 @@ server:
     include-message: always
 
 spring:
-  datasource:
-    username: ryednap
-    password: unico
-    url: jdbc:mysql://localhost:3306/WeCare
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
   servlet:
     multipart:
-      max-file-size: 20MB
-      max-request-size: 25MB
+      max-file-size: 10MB
+      max-request-size: 15MB
 
