@@ -1,0 +1,19 @@
+server:
+  port: 3000
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    username: ryednap
+    password: unico
+    url: jdbc:mysql://localhost:3306/WeCare
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 25MB
+
